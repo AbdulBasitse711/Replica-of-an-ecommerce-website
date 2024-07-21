@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+
+.LogoImage{
+    mix-blend-mode: color-burn;
+    max-width: 60%;
+}
+
+.urdu-font{
+    font-family: "Noto Sans Arabic", sans-serif;
+                                                          
+}
