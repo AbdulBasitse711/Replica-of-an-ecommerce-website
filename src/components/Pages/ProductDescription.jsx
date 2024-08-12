@@ -41,7 +41,9 @@ function ProductDescription() {
                 <div className='w-full h-full bg-gray-100 flex items-center justify-center'>
                     {pantryEssentialsData[productListNumber] &&
                         <img
-                            src={pantryEssentialsData[productListNumber].recommendedProducts[productId].links.images[0] || pantryEssentialsData[productListNumber].recommendedProducts[productId].links.images[1] ? (pantryEssentialsData[productListNumber].recommendedProducts[productId].links.images[0].href) : (pantryEssentialsData[productListNumber].recommendedProducts[productId].links.images[1].href)}
+                            src={pantryEssentialsData[productListNumber].recommendedProducts[productId].links.images[0] || pantryEssentialsData[productListNumber].recommendedProducts[productId].links.images[1] ? (pantryEssentialsData[productListNumber].recommendedProducts[productId].links.images[0].href.slice(0,
+                                pantryEssentialsData[productListNumber].recommendedProducts[productId].links.images[0].href.length - 10
+                              )) : (pantryEssentialsData[productListNumber].recommendedProducts[productId].links.images[1].href)}
                             className='h-[29rem] rounded-2xl aspect-square object-contain'
                             alt="" />
                     }
@@ -104,7 +106,6 @@ function ProductDescription() {
                                     >-</button>
                                     <span className='text-xl mb-1'>
                                         {
-                                            
                                             counter
                                         }
                                     </span>

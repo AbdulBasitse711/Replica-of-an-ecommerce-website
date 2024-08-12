@@ -11,16 +11,16 @@ function ProductCard() {
   return (
     <>
       {
-        pantryEssentialsData.length > 0 && pantryEssentialsData[0].recommendedProducts.map((d, k) => (
+        pantryEssentialsData.length > 0 && pantryEssentialsData[1].recommendedProducts.map((d, k) => (
           <Link to={`/product/${d.name.replace(/\s+/g, '-')}`} key={k} className={`h-[330px] bg-white w-[200px] rounded-xl flex flex-col overflow-y-hidden`}>
             <button onClick={()=>{
               setProductId(k);
-              setProductListNumber(0);
+              setProductListNumber(1);
             }
             }>
               <div className=' pt-2'>
                 <div className=' flex justify-center w-full h-auto'>
-                  <img className='w-44 aspect-square border-none object-contain' src={d.links.images && d.links.images[0].href} alt="" />
+                  <img className='w-24 aspect-square border-none object-contain' src={d.links.images && d.links.images[0].href} alt="" />
                 </div>
               </div>
               <div className=' w-5/6 h-1/3 ml-4'>
@@ -39,7 +39,7 @@ function ProductCard() {
                 <div className=' pl-2 pt-1 w-full h-auto flex gap-1'>
                   <p className='text-gray-500 text-sm line-through'>{d.price.formattedValue}
                   </p>
-                  <span className='text-sm text-red-600'>{d.price.discount ? Math.floor(100 - d.price.discount.price * 100 / d.price.price) + '% OFF' : 13 + '% OFF'}</span>
+                  <span className='text-sm text-red-600'>{d.price.discount && Math.floor(100 - d.price.discount.price * 100 / d.price.price) + '% OFF'}</span>
                 </div>
                 <div className='pt-1 text-lg font-thin pl-2 w-full h-auto flex gap-1 text-left'>
                   {d.name}

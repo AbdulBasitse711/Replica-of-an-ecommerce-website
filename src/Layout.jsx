@@ -8,9 +8,9 @@ import FlagContextProvider from './contexts/FlagContextProvider'
 function Layout() {
   return (
     <FlagContextProvider>
-    <Header/>
-    <Outlet/>
-    <Footer/>
+      <Header />
+      <Outlet />
+      <Footer />
     </FlagContextProvider>
   )
 }

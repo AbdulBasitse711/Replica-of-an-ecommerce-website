@@ -105,6 +105,7 @@ function Header() {
             <div className='min-h-[60px] m-0 p-0'>
                 <nav className=''>
                     <div className='grid  sm:grid-cols-12'>
+
                         <div className=' flex items-center justify-start pl-2  sm:col-span-2'>
                             <div className='flex items-center ml-4 '
                             >
@@ -116,11 +117,13 @@ function Header() {
                             </div>
 
                         </div>
+
                         <div className='sm:col-span-4 flex items-center relative '>
 
                             <input type="text" className='w-full h-10 pl-4  rounded-3xl bg-gray-100' placeholder="Search" />
 
                         </div>
+
                         <div className=' sm:col-span-2'>
                             <div className='w-full h-full ml-14 flex items-center gap-2'>
                                 <div>
@@ -132,12 +135,14 @@ function Header() {
                                 </div>
                             </div>
                         </div>
+
                         <div className=' sm:col-span-2  flex items-center ml-14 '>
                             <div className='flex items-center gap-2'>
                                 <img className='h-7 w-7' src="/src/assets/usericon.png" alt="" />
                                 <h3 className='font-sans text-[#0e5aa7] dark:text-white'>Login & Register</h3>
                             </div>
                         </div>
+
                         <div className=' sm:col-span-1 flex items-center '>
                             <ThemeBtn />
                             <button onClick={displayCountry}>
@@ -149,6 +154,7 @@ function Header() {
                                 </div>
                             </button>
                         </div>
+
                         <div className='sm:col-span-1 relative flex items-center left-10 hover:cursor-pointer'>
                             <div className='relative'>
                                 <Link to={'cart'} >
@@ -161,6 +167,7 @@ function Header() {
                                 </Link>
                             </div>
                         </div>
+                        
                     </div>
 
 

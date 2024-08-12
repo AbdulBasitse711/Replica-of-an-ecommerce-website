@@ -22,7 +22,7 @@ function ProductCard({ data, currentIndex }) {
               className={`h-[330px] bg-white w-[200px] rounded-xl flex flex-col overflow-y-hidden`}>
               <div className=' pt-2'>
                 <div className=' flex justify-center w-full h-auto'>
-                  <img className='w-44 aspect-square border-none object-contain' src={d.links.images && d.links.images[0].href} alt="" />
+                  <img className='w-24 aspect-square border-none object-contain' src={d.links.images && d.links.images[0].href} alt="" />
                 </div>
               </div>
               <div className=' w-5/6 h-1/3 ml-4'>
